@@ -1,0 +1,204 @@
+@media screen and (max-width: 600px) {
+	.tree{
+		display: none;
+	}
+	html {
+      	-webkit-text-size-adjust: none;
+    }
+	body {
+		background-size: 50%;
+		background-image: url("../img/sm-tree.png");
+		background-repeat:no-repeat;
+		background-position:-5px top;
+		min-width: 300px;
+	}
+	.popover{
+		width:70% !important;
+		font-size:14px !important;
+	}
+	*[data-ui='popover-panel']{
+		top:20px !important;
+	}
+	#join{
+		right:20px !important;
+		top:190px !important;
+		max-width: 40%;
+   		width: 40%;
+	}
+	header nav{
+		width: 80px;
+	}
+	header a{
+	   	outline: none;
+   		border:none;
+	}
+	hgroup{
+		text-align: right;
+		width: auto !important;
+	}
+	#scrollup{
+		right: 2px;
+		bottom: 2px;
+	}
+	.header-container, .limited {
+		width:90%;
+	}
+	#site-logo{
+		font-size: 24px;
+		margin-top: 30px;
+		margin-bottom: 0px;
+	}
+	#site-description{
+		font-size: 16px;
+		margin-top: 30px;
+		margin-left: 3px;
+	}
+	nav a{
+		display: block;
+		font-size: 13px !important
+	}
+	.dotted{
+		display: none;
+	}
+	nav span{
+	margin-left: 10px;
+	}
+	nav{
+		margin-left: 18px;
+	}
+	nav span img{
+		margin-top: 5px;
+		margin-bottom: 5px;
+		width: 10px !important;
+	}
+	.regbutton{
+		height: 60px;
+		width: 95%;
+		max-width:300px;
+	}
+								/*  about  */
+	.aboutLeft, .aboutRight {
+		width: 100%;
+		display: block;
+		padding: 5px 0;
+		border: none;
+	}
+	#about .regbutton {
+		font-size: 22px;
+	}
+								/*  agenda  */
+	#agenda {
+		height: 400px;
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 0px;
+		text-align: center;
+	}
+	.sectionHead {
+		text-align: center;
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	.agendaDate {
+		font-size: 105%;
+	}
+	.for-large{
+		display: none;
+	}
+	.for-small{
+		display: block;
+		height:250px;
+		width: 280px;
+		position: relative;
+		float: right;
+		right: 50%;
+		margin-top: 10px;
+	}
+	.inside{
+		position: relative;
+		/*float: right; */
+		right: -50%;
+	}
+	.data,.stars,.comments{
+		float:left;
+	}
+	.stars{
+		margin-top: 5px;
+		margin-left: 0px !important;
+	}
+	.data{
+		width: 70px;
+		padding-left: 5px !important;
+		height:250px;
+	}
+	.data p, .agenda-item p {
+		margin-bottom: 33px;
+		margin-top: 2px;
+	}
+	img[alt=star]{
+		margin-bottom: 20px;
+		margin-right: 5px;
+	}
+	.comments{
+		font-size: 10px;
+		width: 130px;
+		margin-left: 15px;
+		text-align: left;
+
+	}
+	.comments p{
+		margin-top: 0px;
+		margin-bottom: 10px;
+	}
+
+							/*   FAQ   */
+	#faq .faqItem .question {
+		font-size: 15px;
+	}
+	#faq .faqItem .answer {
+		font-size: 13px;
+		margin-left: 25px;
+	}
+							/*   map   */
+	#map {
+		padding-top: 5px;
+	}
+							/*  partners  */
+	#partners {
+		margin: 0 auto !important;
+		background-image: none !important;
+		max-width: 440px;
+	}
+	.support{
+		margin: 0 auto !important;
+		text-align: center;
+		width: 100%;
+		padding-top: 0px !important;
+		padding-bottom: 10px !important;
+	}
+	.main p, .info p{
+		font-size: 14px !important;
+	}
+	.info p{
+		margin-top: 0px !important;
+	}
+	.importantPic{
+		overflow: hidden;
+		margin-left: 10px !important;
+		margin-right: 10px !important;
+		text-align: center !important;
+		width:100px !important;
+		height: 30px;
+		margin-bottom: 5px !important;
+	}
+											/*  anketa  */
+	#anketa{
+		width: 90% !important;
+	}
+	#anketa p{
+		font-size: 100%;
+	}
+	.myform, .anketa, .anketa .anketaItem{
+		width: 100%;
+	}
+}

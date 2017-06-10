@@ -1,0 +1,74 @@
+{
+    "org": [
+        {
+          "src": "kowo.png",
+          "href": "http://kowo.me",
+          "desc": "Креативний ІТ простір"
+        },
+        {
+            "src": "sh.png",
+            "href": "http://kowo.me",
+            "desc": "Школа програмування"
+        }
+    ],
+    "main": [
+        {
+            "src": "digitalwill.png",
+            "href": "http://www.digitalwill.com.ua/",
+            "desc": "Hotel's best friend"
+        },
+        {
+            "src": "onix.png",
+            "href": "http://onix-systems.com/",
+            "desc": "We are Your Future in Assisted Technology Development"
+        },
+        {
+            "src": "adv.gif",
+            "href": "http://www.advection.net/",
+            "desc": "The Cloud VDN"
+        },
+        {
+            "src": "KinectPRO.png",
+            "href": "http://kinect.pro/",
+            "desc": "Enrich routine things"
+        },
+        {
+            "src": "200x300.png",
+            "href": "http://200x300.com/",
+            "desc": "Flash, ads, and Rock'N'Roll"
+        },
+        {
+            "src": "ITVDN.png",
+            "href": "https://itvdn.com/ru",
+            "desc": "Курсы программирования"
+        },
+        {
+            "src": "Magnus_logo.png",
+            "href": "https://vk.com/shopmagnus",
+            "desc": "Компьютерный центр \"Магнус\""
+        },
+        {
+            "src": "fayno.jpg",
+            "href": "https://www.facebook.com/veresenplus/?fref=ts",
+            "desc": "Просто і зручно"
+        },
+        {
+            "src": "GGJ.png",
+            "href": "http://www.ggj.org.ua/",
+            "desc": "Making Ukrainian gamedev great again"
+        },
+        {
+            "src": "ds.png",
+            "href": "http://dynamicstreaming.net",
+            "desc": "We handle streaming projects of any complexity"
+
+        }
+    ],
+    "info": [
+        {
+            "src": "kievstar.png",
+            "href": "https://kyivstar.ua/",
+            "desc": "Просто. Інноваційно. Краще."
+        }
+    ]
+}

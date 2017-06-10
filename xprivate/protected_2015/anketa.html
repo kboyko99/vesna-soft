@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vesnasoft 2015 - Анкети</title>
+	<link rel="shortcut icon" href="../img/star.png" type="image/png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="jquery.tablesorter.js"></script>
+	<style>
+		table {
+			margin: 10px;
+			width: calc(100% - 20px) !important;
+		}
+		table caption {
+			text-align: center;
+			font-size: 20px;
+		}
+		thead {
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<table class="table table-bordered table-striped table-hover" id="participants">
+		<caption>Учасники фестивалю</caption>
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Дата</th>
+				<th>ФІО</th>
+				<th>Вік</th>
+				<th>Місто</th>
+				<th>Навч.закл.</th>
+				<th>E-mail</th>
+				<th>Телефон</th>
+				<th>Хакатон</th>
+				<th>Проект</th>
+				<th>Про свій проект</th>
+			</tr>
+		</thead>
+		<tbody>
+			
+		</tbody>
+	</table>
+
+	<table class="table table-bordered table-striped table-hover" id="guests">
+		<caption>Гості</caption>
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Дата</th>
+				<th>ФІО</th>
+				<th>E-mail</th>
+			</tr>
+		</thead>
+		<tbody>
+			
+		</tbody>
+	</table>
+
+	<table class="table table-bordered table-striped table-hover" id="guests_want">
+		<caption>Хочу бути гостем (анкета 2)</caption>
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Дата</th>
+				<th>ФІО</th>
+				<th>Про себе</th>
+				<th>E-mail</th>
+			</tr>
+		</thead>
+		<tbody>
+			
+		</tbody>
+	</table>
+
+	<script>
+		$.ajax({
+			url:"anketa.json",
+			dataType: "JSON"
+		})
+		.done(function(msg) {
+			$.each(msg, function(num,anketa) {
+				if(!anketa.date) {
+					anketa.date = "07.05.15<br>00:00"
+				}
+				var str = "<tr>";
+				str+="<td>"+(num+1)+"</td>"+
+					"<td>"+anketa.date+"</td>"+
+					"<td>"+anketa.fio+"</td>"+
+					"<td>"+anketa.age+"</td>"+
+					"<td>"+anketa.city+"</td>"+
+					"<td>"+anketa.school+"</td>"+
+					"<td>"+anketa.email+"</td>"+
+					"<td>"+anketa.phone+"</td>"+
+					"<td>"+(anketa.hakaton=="true"?"Так":"Ні")+"</td>"+
+					"<td>"+(anketa.project=="true"?"Так":"Ні")+"</td>"+
+					"<td>"+unescape(anketa.aboutProject)+"</td>";
+				str+="</tr>";
+				$("#participants tbody").append(str);
+			})
+			$("#participants").tablesorter(); 
+		})
+
+		$.ajax({
+			url:"guest.json",
+			dataType: "JSON"
+		})
+		.done(function(msg) {
+			$.each(msg, function(num,anketa) {
+				if(!anketa.date) {
+					anketa.date = "07.05.15 00:00"
+				}
+				var str = "<tr>";
+				str+="<td>"+(num+1)+"</td>"+
+					"<td>"+anketa.date+"</td>"+
+					"<td>"+anketa.fio+"</td>"+
+					"<td>"+anketa.email+"</td>"
+				str+="</tr>";
+				$("#guests tbody").append(str);
+			})
+			$("#guests").tablesorter(); 
+		})
+
+		$.ajax({
+			url:"guest_want.json",
+			dataType: "JSON"
+		})
+		.done(function(msg) {
+			$.each(msg, function(num,anketa) {
+				if(!anketa.date) {
+					anketa.date = "07.05.15 00:00"
+				}
+				var str = "<tr>";
+				str+="<td>"+(num+1)+"</td>"+
+					"<td>"+anketa.date+"</td>"+
+					"<td>"+anketa.fio+"</td>"+
+					"<td>"+anketa.about+"</td>"+
+					"<td>"+anketa.email+"</td>"
+				str+="</tr>";
+				$("#guests_want tbody").append(str);
+			})
+			$("#guests_want").tablesorter(); 
+		})
+	</script>
+	<script>
+	$(function() {
+		{ 
+	        
+	    } 
+	})
+	</script>
+</body>
+</html>

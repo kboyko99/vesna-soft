@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport'  content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
+	<meta name="description" content="Наш фестиваль - это возможность для школьников, а также студентов презентовать свой проект (стартап), посоревноваться между собой, познакомиться с интересными людьми и получить полезные призы.">
+	<title>Vesna Soft</title>
+	<link rel="shortcut icon" href="img/star.png" type="image/png">
+	<link rel="stylesheet" href="css/softspring.css">
+	<link rel="stylesheet" href="css/media-normal.css">
+	<link rel="stylesheet" href="css/media-small.css">
+	<link rel="stylesheet" href="css/media-phone.css">
+	<link rel="stylesheet" href="css/media-mini.css">
+	<!-- <link rel="stylesheet" href="css/popover.css"> -->
+	<!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+	<link rel="stylesheet" href="css/jquery.raty.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/jquery.raty.js"></script>
+	<style>
+		#backToMain {
+			display: none;
+			margin-top: 20px;
+		}
+		.anketaItem span {
+			line-height: 140% !important;
+		}
+		.anketaAnnouncement {
+			max-width: 700px;
+			font-size: 18px;
+			margin: 30px auto -10px;
+			text-align: center;
+			line-height: 130%;
+		}
+		input[type="radio"] {
+			/*margin: 10px 10px 10px 20px;*/
+			text-align: left;
+		}
+		select {
+			width: 90%;
+			margin: 5px auto;
+			margin-left: -45%;
+			position: relative;
+			left: 50%;
+			font-family: 'Museo Sans Cyr';
+			font-size: 100%;
+			padding: 5px;
+		}
+		.anketaItem {
+			text-align: left;
+		}
+		.anketaAnswer {
+			  /*border: 2px dashed lavender;*/
+			  padding: 10px 0;
+			  /*margin: 10px 0;*/
+			  margin: -5px 0 20px
+		}
+		#mark_wrap {
+			width: 400px;
+			width: 210px;
+			margin: 5px 0;
+			margin-left: 5%;
+		}
+		/*@media screen and (max-width: 460px) {
+			#mark_wrap {
+				width: 50px;
+			}
+			#mark_wrap label {
+				margin: 7px 0;
+				display: block;
+			}
+		}*/
+	</style>
+</head>
+<body>
+	<div class='tree'></div>
+	<div class='bg'></div>
+
+	<header id="header">
+ 		<div class="header-container">
+	 		<hgroup>
+	         	<p id="site-logo">Vesna-Soft 2015</p>
+	         	<p id="site-description">Кіровоградський молодіжний IT&#8209;фестиваль</p>
+	      	</hgroup>
+	      	<nav>
+	        	<a href="." class="scroll-a">
+	        		Повернутись на головну
+	        		<span class="dotted"></span>
+	        	</a>
+	      	</nav>
+ 		</div>
+   	</header>
+   	
+	<div class="container">
+	    <section class="section limited" id="anketa">
+			<div class="sectionHead">Ваш відгук про фестиваль</div>
+			<!-- <div class="anketaAnnouncement">
+				Бажаєте зв’язатися з нами? Напишіть на e-mail <a href="mailto:vesna@programming.kr.ua">vesna@programming.kr.ua</a>
+			</div> -->
+
+			<div class="anketa">
+		    	<div class="myform">
+		    		<div class="anketaItem find">					
+						<span>Як ви дізнались про фестиваль?</span>
+						<div class="anketaAnswer">
+							<select name="" id="find">
+								<option value="socials">Соц. мережі</option>
+								<option value="smi">ЗМІ</option>
+								<option value="reklama">Реклама</option>
+								<option value="friends">Друзі</option>
+								<option value="was_last_year">Був минулого року</option>
+								<option value="other">Інше</option>
+							</select>
+						</div>
+					</div>
+					<div class="anketaItem mark">
+						<span>Оцініть по 10-тибальній шкалі, чи готові ви порекомендувати своїм друзям наш фестиваль наступного року?</span>
+						<div class="anketaAnswer">
+							<div id="mark_wrap">
+								<div id="raty"></div>
+							</div>
+						</div>
+					</div>
+					<div class="anketaItem opinion">
+						<span>Напишіть, будь ласка, вашу думку про Vesna-soft 2015 та побажання щодо проведення фестивалю наступного року.</span>
+						<textarea id="opinion" class="form-input" maxlength="500"></textarea>
+					</div>
+		    	</div>
+	    	</div>
+	    	<button class="regbutton submit transition" id="submit">Відправити :)</button>
+
+			<a href=".">
+		    	<button class="regbutton submit transition" id="backToMain">На головну</button>
+	    	</a>
+	    </section>
+    </div>
+
+	<script src="js/feedback.js"></script>
+
+
+
+    <!-- Yandex.Metrika informer -->
+	<center style="display:none"><a href="https://metrika.yandex.ru/stat/?id=24151150&amp;from=informer"
+	target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/24151150/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+	style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:24151150,lang:'ru'});return false}catch(e){}"/></a>
+	</center>
+	<!-- /Yandex.Metrika informer -->
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (d, w, c) {
+		    (w[c] = w[c] || []).push(function() {
+		        try {
+		            w.yaCounter24151150 = new Ya.Metrika({id:24151150,
+		                    webvisor:true,
+		                    clickmap:true,
+		                    trackLinks:true,
+		                    accurateTrackBounce:true});
+		        } catch(e) { }
+		    });
+
+		    var n = d.getElementsByTagName("script")[0],
+		        s = d.createElement("script"),
+		        f = function () { n.parentNode.insertBefore(s, n); };
+		    s.type = "text/javascript";
+		    s.async = true;
+		    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+		    if (w.opera == "[object Opera]") {
+		        d.addEventListener("DOMContentLoaded", f, false);
+		    } else { f(); }
+		})(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript><div><img src="//mc.yandex.ru/watch/24151150" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+	
+	<script>
+	  	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	 	 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	 	 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	 	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  	ga('create', 'UA-48530684-1', 'vesnasoft.org');
+	  	ga('send', 'pageview');
+	</script>
+
+</body>
+</html>

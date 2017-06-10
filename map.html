@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Vesna-Soft</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">  <style>
+    body {
+      margin: 0;
+    }
+    #map {
+      height: 100vh;
+      width: 100vw;
+    }
+  </style>
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.css' rel='stylesheet' />
+</head>
+<body>
+<div id="map"></div>
+<script>
+    function initMap() {
+        let uluru = {lat: 48.504999, lng: 32.259944};
+        let map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 16,
+            center: uluru
+        });
+        let marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaHeogO0BhQ0jSgkO1vLgbCVkfNQOQ9T4&callback=initMap">
+</script></body>
+</html>

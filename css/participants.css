@@ -1,0 +1,26 @@
+html, body{
+    margin: 0;
+}
+#hackathon, #projects, #exhibition, #guests{
+    width:100%;
+    font-family:sans-serif;
+}
+.hidden{
+    display: none;
+}
+.auth {
+    margin: 20% auto 0;
+    display: block;
+    width: 20%;
+}
+.auth input{
+    padding: 2%;
+    font-size: 18px;
+}
+.tabulator-cell, .tabulator-col, .tabulator-frozen{
+    width: 200px!important;
+    min-width: 200px!important;
+}
+.tabulator-col-title{
+    width: 100%!important;
+}

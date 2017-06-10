@@ -1,0 +1,99 @@
+@media screen and (max-width: 1023px) {
+	body {
+		background-size: 40%;
+	}
+	.limited {
+		width: auto;
+	}
+	.popover{
+		width:80% !important;
+		font-size:10px !important;
+	}
+	*[data-ui='popover-panel']{
+		top:50px;
+	}
+	nav{
+		font-size: 14px;
+	}
+	nav span img{
+		margin-right: 5px;
+		margin-left: 5px;
+		margin-bottom: -3px;
+	}
+	.popover{
+		font-size:20px !important;
+	}
+	.header-container, .limited {
+		width:90%;
+	}
+	#site-description{
+		font-size: 20px;
+		margin-top: 9px;
+		margin-left: 3px;
+	}
+
+
+													/*  header  */
+	.tree{
+		width: 350px;
+		height: 320px;
+		top: -30px;
+		right: 15px;
+		background-size: 350px;
+	}
+	#join{
+		max-width: 21%;
+   		width: 21%;
+   		right: 90px;
+   		top: 20px;
+	}
+
+
+													/*  agenda  */
+
+	.for-small{
+		display: none;
+	}
+	.sectionHead {
+		font-size: 28px;
+		margin-bottom: 10px;
+	}
+	.agenda-item img {
+		width: 35px;
+	}
+	img[alt=green-divider]{
+		margin-bottom: 12px;
+		width: 70px;
+	}
+
+	.data p, .agenda-item p {
+		font-size: 14px;
+		margin-left: 0px;
+	}
+	.data-p{
+		margin-right: 95px;
+
+	}
+	.stars{
+		margin-left: 3%px;
+		text-align: center;
+		text-align:-webkit-center;
+		text-align:-moz-center;
+		margin-top: 0px;
+	}
+	.comments p{
+		height:40px;
+		display: inline-block;
+		margin-top: 5px;
+	}
+	.comments{
+		font-size: 14px;
+		text-align: center;
+
+	}
+
+											/*  partners  */
+	#partners{
+		width: 100%;
+	}
+}

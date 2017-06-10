@@ -1,0 +1,6 @@
+Options +Indexes
+
+AuthType Basic
+AuthName "private"
+AuthUserFile /home/vesnasoft/data/www/vesnasoft.org/xprivate/protected_2015/.htpasswd
+Require valid-user

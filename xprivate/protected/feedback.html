@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vesnasoft 2015 - Анкети</title>
+	<link rel="shortcut icon" href="../img/star.png" type="image/png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="jquery.tablesorter.js"></script>
+	<style>
+		table {
+			margin: 10px;
+			width: calc(100% - 20px) !important;
+		}
+		table caption {
+			text-align: center;
+			font-size: 20px;
+		}
+		thead {
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<table class="table table-bordered table-striped table-hover" id="feedback">
+		<caption>Учасники фестивалю</caption>
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Дата</th>
+				<th>Як дізнались</th>
+				<th>Оцінка (макс.10)</th>
+				<th>Думка про Vesna-soft 2015 та побажання</th>
+			</tr>
+		</thead>
+		<tbody>
+			
+		</tbody>
+	</table>
+
+	<script>
+		var defaults = {
+			socials: "Соц. мережі",
+			smi: "ЗМІ",
+			reklama: "Реклама",
+			friends: "Друзі",
+			was_last_year: "Був минулого року",
+			other: "Інше"
+		}
+
+
+		$.ajax({
+			url:"feedback.json",
+			dataType: "JSON"
+		})
+		.done(function(msg) {
+			$.each(msg, function(num,anketa) {
+				var where_find = defaults[anketa.find]?defaults[anketa.find]:anketa.find;
+				if(!anketa.date) {
+					anketa.date = "07.05.15<br>00:00"
+				}
+				var str = "<tr>";
+				str+="<td>"+(num+1)+"</td>"+
+					"<td>"+anketa.date+"</td>"+
+					"<td>"+where_find+"</td>"+
+					"<td>"+anketa.raty+"</td>"+
+					"<td>"+unescape(anketa.opinion)+"</td>";
+				str+="</tr>";
+				$("#feedback tbody").append(str);
+			})
+			$("#feedback").tablesorter(); 
+		})
+
+	</script>
+</body>
+</html>

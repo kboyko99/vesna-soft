@@ -1,0 +1,169 @@
+html, body {
+    margin: 0;
+    background: url('../img/SpaceBackground.png') no-repeat fixed;
+    background-size: cover;
+    overflow: hidden;
+    font-family: 'Space Mono', monospace;
+    -ms-overflow-style: none!important;
+    overflow: -moz-scrollbars-none!important; }
+
+::-webkit-scrollbar {
+    display: none!important; }
+
+.getStarted {
+    width: 100%;
+    padding: 5% 0;
+    margin: 20% auto 0;
+    background-color: rgba(95, 162, 219, 0.2);
+}
+#somebutton {
+    margin: 0 auto;
+    display: block;
+    padding: 1.3% 5%;
+    border: 2px solid;
+    cursor: pointer;
+    background: transparent;
+    transition: background;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+#somebutton:hover{
+    background: rgba(255, 255, 255, 0.3);
+    transition-duration: 0.15s;
+    outline: none;
+}
+.terminal-holder{
+    width: 50vw;
+    height: 94vh;
+    background: black;
+    margin: 0;
+    border: 2px solid black;
+    display: inline-block;
+}
+.stream-holder{
+    display: inline-block;
+    width: 48vw;
+    height: 50vh;
+    vertical-align: top;
+    font-size: 1.3vw;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.hidden {
+    display: none;
+}
+
+
+.info {
+    color: white;
+    overflow: scroll;
+    max-height: 35vh;
+    padding: 25px 5% 0;
+}
+a.printed{
+    text-decoration: none;
+    color: #eee;
+    text-align: left;
+    cursor: default;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none; }
+a.printed ::-webkit-scrollbar {
+    display: none; }
+
+.countdown{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    color: white;
+    padding: 2%;
+    border: 2px solid white;
+}
+
+body {
+    background-color: black;
+}
+#countdown {
+    width: 60px;
+    position: relative;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+    opacity: 1.0;
+    display: inline-block;
+    transition:opacity 0.2s ease;
+    margin-top: 0;
+}
+.countdown-container {
+    color: white;
+    margin-left: 20px;
+    padding: 0 5%;
+}
+.contact-us{
+    position: fixed;
+    top: 30%;
+    left: 10%;
+    font-size: 120%;
+    background: black;
+    color: white;
+    width: 30%;
+    padding: 2%;
+    font-family: monospace;
+}
+.contact-us a{
+    color: white;
+}
+.countdown_info{
+    display: inline-block;
+    vertical-align: top;
+}
+.b-popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0;
+}
+.b-popup .b-popup-content {
+    position: relative;
+    margin: 215px auto 0 auto;
+    width: 280px;
+    height: 100px;
+    padding: 60px 0 0 0;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+}
+.close-button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 16px;
+    color: grey;
+    cursor: pointer;
+}
+.sorry{
+    width: 50%;
+    margin: 17% auto;
+    font-size: 45px;
+    color: white;
+}
+.contact-support{
+    color: gray;
+    font-size: 1.3vw;
+    text-align: center;
+}
+.contact-support a{
+    color: grey;
+}
+.stream-holder-holder{
+    width: 100%;
+    height: 40vh;
+}

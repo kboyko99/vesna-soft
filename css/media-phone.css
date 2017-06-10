@@ -1,0 +1,124 @@
+@media screen and (max-width: 690px) {
+	body {
+		background-size: 45%;
+	}
+	.popover{
+		width:90% !important;
+		font-size:16px !important;
+	}
+	*[data-ui='popover-panel']{
+		top:30px !important;
+	}
+	.header-container, .limited {
+		width:90%;
+	}
+	#site-logo{
+		font-size: 40px !important;
+		margin-top: 21px;
+		margin-bottom: 0px;
+	}
+	#site-description{
+		font-size: 16px;
+		margin-top: 9px;
+		margin-left: 3px;
+	}
+	.video{
+    margin: 0 auto 25px;
+    margin-left: 4px;
+	}
+	nav{
+		margin-left: 5px;
+		margin-top:30px;
+		font-size: 12px !important;
+		margin-bottom:20px;
+	}
+	hgroup{
+		width:400px !important;
+	}
+	nav span img{
+		margin-right: 2px !important;
+		margin-left: 2px !important;
+		width: 4px !important;
+		margin-bottom: 1px !important;
+	}
+	.sectionHead {
+		margin-top: 10px !important;
+	}
+						/*  header  */
+	.tree{
+		width: 222px;
+		height: 180px;
+		top: 0px;
+		right: 0px;
+		background-size: 222px;
+	}
+	#join{
+		right:30px;
+		max-width: 23%;
+   		width: 23%;
+	}
+								/*  about  */
+	#about .regbutton {
+		margin-bottom: 17px;
+	}
+								/*  agenda  */
+	#agenda {
+		padding: 0 auto !important;
+		margin: 0 auto !important;
+	}
+
+	img[alt=green-divider]{
+		margin-bottom: 13px !important;
+		width: 42px !important;
+	}
+	img[alt=star]{
+		width: 30px !important;
+	}
+
+	.data p, .agenda-item p {
+		font-size: 12px !important;
+		margin-left: 0px;
+	}
+	.data-p{
+		margin-right: 54px !important;
+
+	}
+	.comments{
+		font-size: 12px !important;
+	}
+
+	.stars{
+		margin-left: 0 !important;
+		margin-top: -5px !important;
+	}
+							/*  partners  */
+	.support{
+		text-align: center;
+		padding-bottom: 10px !important;
+		padding-top: 10px !important;
+	}
+	.main p, .info p{
+		font-size: 16px !important;
+		text-align: center;
+	}
+	.importantPic{
+		width:130px !important;
+	}
+	#partners .info {
+		margin-top: 30px;
+	}
+							/*   FAQ   */
+	#faq .faqItem .question {
+		font-size: 16px;
+	}
+	#faq .faqItem .answer {
+		font-size: 14px;
+	}
+	.anketa{
+		width:424px;
+	}
+	#anketa .form-input{
+	    width: 95%;
+	    max-width: calc(100% - 24px);
+	}
+}

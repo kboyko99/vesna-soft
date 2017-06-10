@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "My Protected Area"
+AuthUserFile /home/ydegtyar/data/www/ydegtyar.shpp.me/vesnasoft/xprivate/protected/.htpasswd
+#AuthUserFile /var/www/html/vesnasoft/xprivate/protected/.htpasswd
+Require valid-user

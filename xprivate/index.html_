@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+	<meta name="description" content="Наш фестиваль - это возможность для школьников, а также студентов презентовать свой проект (стартап), посоревноваться между собой, познакомиться с интересными людьми и получить полезные призы.">
+	<title>Vesna Soft</title>
+	<link rel="shortcut icon" href="img/star.png" type="image/png">
+	<link rel="stylesheet" href="css/softspring.css">
+	<link rel="stylesheet" href="css/media-normal.css">
+	<link rel="stylesheet" href="css/media-small.css">
+	<link rel="stylesheet" href="css/media-phone.css">
+	<link rel="stylesheet" href="css/media-mini.css">
+	<link rel="stylesheet" href="css/icheck_green.css">
+	<!-- <link rel="stylesheet" href="css/popover.css"> -->
+	<!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+	<link rel="stylesheet" href="photos-slider/justifiedGallery.css" />
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!-- vk-share-button -->
+	<script type="text/javascript" src="http://vk.com/js/api/share.js?93" charset="windows-1251"></script>
+	<!-- end vk-share-button -->
+
+</head>
+
+<body>
+	<!-- fb-share-button -->
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v2.5";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<!-- end fb-share-button -->
+
+	<div class='tree'></div>
+	<div class='bg'></div>
+
+	<header id="header">
+		<!-- <a href="http://kowo.me/camera" id="big-but" class="camera" target="_blank">
+			<img src="img/camera.png" alt="Взяти участь" id="join">
+		</a> -->
+
+		<div class="header-container">
+			<hgroup>
+				<p id="site-logo">Vesna-Soft 2016</p>
+				<p id="site-description">Кіровоградський молодіжний IT&#8209;фестиваль</p>
+			</hgroup>
+			<nav>
+
+				<a href="#about" class="scroll-a">
+	        		Про Vesna-Soft
+	        		<span class="dotted"></span>
+	        	</a>
+				<span>
+	        		<img src="img/point.png">
+	        	</span>
+				<a href="#agenda" class="scroll-a">
+							Розклад
+							<span class="dotted"></span>
+						</a>
+				<span>
+							<img src="img/point.png">
+						</span>
+				<a href="#faq" class="scroll-a">
+	        		FAQ
+					<span class="dotted"></span>
+	        	</a>
+				<span>
+	        		<img src="img/point.png">
+	        	</span>
+				<a href="#map" class="scroll-a">
+	        		Мапа
+	        		<span class="dotted"></span>
+	        	</a>
+				<span>
+	        		<img src="img/point.png">
+	        	</span>
+				<a href="#partners" class="scroll-a">
+	        		Партнери
+	        		<span class="dotted"></span>
+	        	</a>
+				<span>
+	        		<img src="img/point.png">
+	        	</span>
+				<!-- <a href="#jury" class="scroll-a">
+	        		Жюрі
+	        		<span class="dotted"></span>
+	        	</a>
+	        	<span>
+	        		<img src="img/point.png">
+	        	</span> -->
+				<!-- <a href="http://vk.com/vesna_soft" target="_blank" id="vk">
+	        		ВКонтакті
+					<span class="dotted"></span>
+	        	</a>
+	        	<span>
+	        		<img src="img/point.png">
+	        	</span> -->
+				<div class="dropdown">
+					<button class="dropbtn">Минулі роки</button>
+					<div class="dropdown-content">
+						<a href="2014">2014</a>
+						<a href="2015">2015</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<!-- <div class="container">
+		<section class="section" id="video">
+			<p class="sectionHead">Відео з фестивалю</p>
+			<div class="video" style="width:560px">
+				<iframe width="100%" height="315" src="//www.youtube.com/embed/Ypvsfh_0jGk" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</section>
+	</div> -->
+
+	<!-- <div class="container">
+	<section class="section limited" id="photos">
+			<div class='photos-container'>
+				<div class="sectionHead">Невеличкий фотозвіт :)</div>
+				<div id="mygallery">
+					<a href="photos-slider/photos/01.jpg" class="fancybox" rel="group">
+						<img  src="photos-slider/photos/small/01.jpg">
+					</a>
+					<a href="photos-slider/photos/02.jpg" class="fancybox" rel="group">
+						<img  src="photos-slider/photos/small/02.jpg">
+					</a>
+				</div>
+			</div>
+		</section>
+	</div> -->
+
+	<div class="container">
+		<section class="section limited" id="about">
+			<div class="sectionHead">Що таке Vesnasoft?</div>
+			<!-- <p class='center'>Vesnasoft &mdash; це безкоштовний, багатосторонній евент для молоді, присвячений світу ІТ та програмуванню.</p> -->
+			<p class='center'>Vesnasoft &mdash; це івент для дітей та студентів, присвячений світу ІТ та програмуванню. </p>
+			<p class="aboutLeft">
+				<span class="aboutCapture">Інтерактивне змагання для програмістів</span>
+				<br>
+				<span class="paragraph">
+					Цього року ми пропонуємо вам взяти участь у битві штучних інтелектів. Командам буде запропоновано написати певного бота, який буде взаємодіяти з ботами інших команд. Для участі вам знадобиться ноутбук та знання програмування на рівні написання простих програм. Спеціальних навичок для участі не вимагається.
+				</span>
+				<!-- <span class="paragraph about-popover">
+					<span class="about-popover-content">Знаєте іншу мову програмування на належному рівні?</span>
+					<span class="about-popover-prompt">Теж приходьте, але все-таки присвятіть пару днів вивченню javascript'а ;)</span>
+				</span> -->
+			</p>
+			<div class="aboutRight">
+				<span class="aboutCapture">Традиційний захист проектів</span>
+				<br>
+				<span class="paragraph">
+					Ви можете презентувати свій проект  в одній з двох номінацій:<br>
+				<ul>
+					<li>програмування</li>
+					<li>дизайн</li>
+				</ul>
+					У вас буде всього <b>4 хвилини</b>, але це насправді досить багато.
+				</span>
+				<span class="paragraph">
+					... ну і звісно будуть призи, а як же без призів :)
+				</span>
+			</div>
+			<!-- <p class="center">Якщо ви бажаєте завітати на захист проектів як глядач &mdash; <a href="guest.html">зареєструйтесь будь-ласка тут</a> :)</p> -->
+			<div class="penguin">
+				<!-- <img src="img/penguin.gif" alt="penguin"> -->
+				<img src="img/dancing_robot.gif" alt="">
+			</div>
+			<!-- <button class="transition regbutton" onclick="return scrollToDiv($('#anketa'))">Зареєструватися</button> -->
+		</section>
+	</div>
+
+	<div class="container">
+		<section class="section" id="agenda">
+			<p class="sectionHead">Розклад</p>
+			<p class="agendaDate">21 травня</p>
+
+			<div class="for-large">
+				<div class="agenda-item">
+					<p>10:00</p>
+					<img src="img/star.png" alt="star">
+					<p>Початок
+						<br />фестивалю</p>
+				</div>
+				<img src="img/gr-divider.png" alt="green-divider">
+				<div class="agenda-item">
+					<p>10:40</p>
+					<img src="img/star.png" alt="star">
+					<p>Перша частина
+						<br />хакатону</p>
+				</div>
+				<img src="img/gr-divider.png" alt="green-divider">
+				<div class="agenda-item">
+					<p>13:00</p>
+					<img src="img/star.png" alt="star">
+					<p>Кава-брейк
+						<br />
+						<br />
+					</p>
+				</div>
+				<img src="img/gr-divider.png" alt="green-divider">
+				<div class="agenda-item">
+					<p>13:40</p>
+					<img src="img/star.png" alt="star">
+					<p>Друга частина
+						<br />хакатону</p>
+				</div>
+				<img src="img/gr-divider.png" alt="green-divider">
+				<div class="agenda-item">
+					<p>17:00</p>
+					<img src="img/star.png" alt="star">
+					<p>Презентація
+						<br />проектів</p>
+				</div>
+				<img src="img/gr-divider.png" alt="green-divider">
+				<div class="agenda-item">
+					<p>18:00</p>
+					<img src="img/star.png" alt="star">
+					<p>Нагородження
+						<br />і закриття</p>
+				</div>
+
+			</div>
+
+			<div class="for-small">
+				<div class="inside">
+					<div class="data">
+						<p>10:00</p>
+						<br/>
+						<p>10:40</p>
+						<br/>
+						<p>13:00</p>
+						<br/>
+						<p>13:40</p>
+						<br/>
+						<p>17:00</p>
+						<br/>
+						<p>18:00</p>
+						<br/>
+					</div>
+					<div class="stars">
+						<img src="img/star.png" alt="star">
+						<br/>
+						<img src="img/star.png" alt="star">
+						<br/>
+						<img src="img/star.png" alt="star">
+						<br/>
+						<img src="img/star.png" alt="star">
+						<br/>
+						<img src="img/star.png" alt="star">
+						<br/>
+						<img src="img/star.png" alt="star">
+						<br/>
+					</div>
+					<div class="comments">
+						<p>Початок фестивалю</p>
+						<br/>
+						<p>Перша частина хакатону</p>
+						<br/>
+						<p>Кава-брейк</p>
+						<br/>
+						<p>Друга частина хакатону</p>
+						<br/>
+						<p>Презентація проектів</p>
+						<br/>
+						<p>Нагородження і закриття</p>
+						<br/>
+					</div>
+				</div>
+				<div class='clear'></div>
+			</div>
+		</section>
+	</div>
+
+	<div class="container">
+		<section class="section limited" id='faq'>
+			<div class="sectionHead">Поширені питання</div>
+			<!-- content from javascript -->
+		</section>
+	</div>
+
+	<div class="container">
+		<section class="section limited" id="anketa">
+			<div class="sectionHead">Реєстрація</div>
+			<div class="anketa">
+				<div class="myform">
+					<div class="anketaItem FIO">
+						<span class='order-number'>#1</span>
+						<span class='form-label'>Прізвище та ім&#39;я<span class="important-asterisk">*</span></span>
+						<input type="text" id="FIO" class="form-input" placeholder="Василенко Борис">
+					</div>
+					<div class="anketaItem age">
+						<span class='form-label'>Вік<span class="important-asterisk">*</span></span>
+						<input type="text" id="age" class="form-input">
+					</div>
+					<div class="anketaItem email">
+						<span class='form-label'>E-mail<span class="important-asterisk">*</span></span>
+						<input type="text" id="email" class="form-input" placeholder="yourmail@gmail.com">
+					</div>
+					<div class="anketaItem phone">
+						<span class='form-label'>Телефон<span class="important-asterisk">*</span></span>
+						<input type="text" id="phone" class="form-input" placeholder="095-123-45-67">
+					</div>
+					<div class="anketaItemCheck project">
+						<input type="checkbox" id="project">
+						<label for='project'>Є проект</label>
+						<div class="clear"></div>
+					</div>
+					<div class="anketaItem aboutProject">
+						<span class='form-label'>Назва вашого проекту<span class="important-asterisk">*</span></span>
+					<input type="text" id="project-title" class='form-input'>
+					<div class="anketaItem">
+						<span class='form-label'>Опишіть Ваш проект в декількох реченнях<span class="important-asterisk">*</span></span>
+						<textarea id="aboutProject" class="form-input" maxlength="500"></textarea>
+					</div>
+				</div>
+				<div class="anketaItemCheck hakaton">
+					<input type="checkbox" id="hakaton">
+					<label for='hakaton'>Хочу хакатонити</label>
+					<div class="clear"></div>
+				</div>
+				<div class="anketaItemCheck team">
+					<input type="checkbox" id="i-have-a-team">
+					<label for='i-have-a-team'>Є команда</label>
+					<div class="clear"></div>
+				</div>
+				<div class="anketaItem my-team">
+					<div class="team-member-info">
+						<span class='order-number'>#2</span>
+						<div class="input-field member-name">
+							<label for="member-name1" class='form-label'>Призвіще та ім’я<span class="important-asterisk">*</span></label>
+							<input type="text" placeholder='Олександр Щукарьов' id="member-name1" class='form-input name-input'>
+						</div>
+						<div class="input-field member-age">
+							<label for="member-age1" class='form-label'>Вік<span class="important-asterisk">*</span></label>
+							<input type="text" id="member-age1" class='form-input age-input'>
+						</div>
+						<div class="input-field member-email">
+							<label for="member-email1" class='form-label'>E-mail<span class="important-asterisk">*</span></label>
+							<input type="text" id="member-email1" class='form-input age-input'>
+						</div>
+					</div>
+
+					<div class="team-member-info">
+						<span class='order-number'>#3</span>
+						<div class="input-field member-name">
+							<label for="member-name2" class='form-label'>Призвіще та ім’я</label>
+							<input type="text" placeholder='Кудрявцев Іван' id="member-name2" class='form-input name-input'>
+						</div>
+						<div class="input-field member-age">
+							<label for="member-age2" class='form-label'>Вік</label>
+							<input type="text" id="member-age2" class='form-input age-input'>
+						</div>
+						<div class="input-field member-email">
+							<label for="member-email2" class='form-label'>E-mail </label>
+							<input type="text" id="member-email2" class='form-input age-input'>
+						</div>
+					</div>
+				</div>
+
+			</div>
+	</div>
+	<div class="hidden hackenproject">
+		<span class='message'>Пишите письма. У вас и проект и хакатон.</span>
+	</div>
+	<div class="hidden wrongemail">
+		<span class='emailmessage'>Уже есть teammate</span>
+	</div>
+
+	<button class="regbutton submit transition">Я в грі! :)</button>
+	<button class="updatebutton hidden transition">Я в грі! :)</button>
+
+	<p class="thanks">Дякуємо за заповнення анкети :)</p>
+	<p class="stay">Залишайтеся <a href="http://vk.com/vesna_soft" target="_blank">ВKонтакті</a> з нами!</p>
+	</section>
+	</div>
+
+	<div class="container">
+		<section class="section" id="map">
+			<div class="sectionHead">Як до нас дістатись</div>
+			<a href="./map.html" target="_blank">
+				<div id="ourmap"></div>
+			</a>
+			<div class="contacts-info">
+				<div class="contact-row contact-address">
+					<div class="contact-icon con"></div>
+					<div class="contact-text">
+						Україна, м. Кіровоград
+						<br> пров. Василівський, 10
+					</div>
+				</div>
+				<div class="contact-row contact-phone">
+					<div class="contact-icon phone"></div>
+					<div class="contact-text">
+						099 196 24 69&nbsp;(Роман)
+						<br> 050 151 04 26&nbsp;(Анатолій)
+					</div>
+				</div>
+				<div class="contact-row contact-mail">
+					<div class="contact-icon mail"></div>
+					<div class="contact-text">
+						Напишіть нам
+						<br>
+						<a href="mailto:vesna@programming.kr.ua">
+						vesna@programming.kr.ua
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<div class="container">
+		<section class="section limited" id="partners">
+			<div class="support">
+				<div class="org">
+					<div class="sectionHead">Організатори:</div>
+				</div>
+				<div class="main">
+					<div class="sectionHead">Партнери:</div>
+				</div>
+				<!-- <div class="info">
+					<div class="sectionHead">Інформаційні партнери:</div>
+				</div> -->
+			</div>
+		</section>
+	</div>
+
+	<!-- <div class="container">
+    	<section class="section" id="jury">
+    		<div class="sectionHead jury-header">Жюрi</div>
+    		<div class="jury-gallery">
+    			<div class="jury-photo anatolij">
+    				<div class="photo-popover">
+    					<p class="photo-name">Анатолій Книшук</p>
+    					<p class="photo-company">Ш++</p>
+    					<p class="photo-description">Founder</p>
+
+    					<p class="photo-tags"><span>Delphi</span> <span>PHP</span> <span>JS</span> <span>education</span></p>
+
+    				</div>
+	    		</div>
+	    		<div class="jury-photo roma">
+					<div class="photo-popover">
+    					<p class="photo-name">Роман Шмельов</p>
+    					<p class="photo-company">Ш++</p>
+    					<p class="photo-description">Coordinator</p>
+
+    					<p class="photo-tags"><span>C</span> <span>JS</span> <span>Java</span> <span>AWS</span><br /><span>highload</span> <span>streaming media</span></p>
+					</div>
+	    		</div>
+	    		<div class="jury-photo sasha">
+					<div class="photo-popover">
+    					<p class="photo-name">Олександр Гор</p>
+    					<p class="photo-description">Software engineer</p>
+    					<p class="photo-tags"><span>C</span> <span>JS</span> <span>Python</span> <span>webapps</span></p>
+					</div>
+	    		</div>
+	    		<div class="jury-photo denis">
+					<div class="photo-popover">
+    					<p class="photo-name">Денис Шерємєтов</p>
+    					<p class="photo-company">ONIX</p>
+    					<p class="photo-description">Project Manager</p>
+
+    					<p class="photo-tags"><span>AS3</span> <span>Java</span> <span>Symphony</span> <span>Zend</span></p>
+					</div>
+	    		</div>
+	    		<div class="jury-photo igor">
+					<div class="photo-popover">
+    					<p class="photo-name">Ігор Янишевський</p>
+    					<p class="photo-company">Archer-Software</p>
+    					<p class="photo-description">Android developer</p>
+
+    					<p class="photo-tags"><span>Java</span> <span>Android</span></p>
+					</div>
+	    		</div>
+	    		<div class="jury-photo artem">
+    				<div class="photo-popover">
+    					<p class="photo-name">Артем Книга</p>
+    					<p class="photo-company">My World Studio</p>
+    					<p class="photo-description">3D designer</p>
+
+    					<p class="photo-tags"><span>Cinema4D</span> <span>3DS Max</span> <span>games</span> <span>Skulptris</span></p>
+    				</div>
+	    		</div>
+	    		<div class="jury-photo apinchuk">
+    				<div class="photo-popover">
+    					<p class="photo-name">Антон Пiнчук</p>
+    					<p class="photo-company">Kinect.PRO</p>
+    					<p class="photo-description">Team Lead</p>
+
+    					<p class="photo-tags"><span>Android</span> <span>Java</span> <span>LAMP</span> <span>JS</span></p>
+    				</div>
+	    		</div>
+	    		<div class="jury-photo evgobrezkov">
+    				<div class="photo-popover">
+    					<p class="photo-name">Євген Обрєзков</p>
+    					<p class="photo-company">Onix-Systems</p>
+    					<p class="photo-description">Open Source Guy</p>
+
+    					<p class="photo-tags"><span>JavaScript</span><span>Node.js</span></p>
+    				</div>
+	    		</div>
+    		<div class="jury-photo dima">
+					<div class="photo-popover">
+    					<p class="photo-name">Дмитро Кондратьєв</p>
+    					<p class="photo-description">Mac developer</p>
+    					<p class="photo-tags"><span>C</span> <span>Objective-C</span> <span>webapps</span> <span>social networks</span></p>
+					</div>
+	    		</div>
+    		</div>
+
+    	</section>
+    </div> -->
+	<div class="container">
+		<section>
+			<div class="sectionHead">Поділіться з друзями</div>
+			<div class="share-buttons">
+				<div class="social-button facebook-share-button">
+					<div class="fb-share-button" data-href="http://vesnasoft.org/" data-layout="button"></div>
+				</div>
+				<div class="social-button vkontakte-share-button">
+					<script type="text/javascript">
+						<!--
+						document.write(VK.Share.button(false, {
+							type: "round_nocount",
+							text: "Поділитися",
+							eng: 1
+						}));
+						-->
+					</script>
+				</div>
+				<div class="social-button twttr-share-button">
+					<a href="https://twitter.com/share" class="twitter-share-button" data-via="vesnasoft" data-hashtags="vesnasoft">Твітнути</a>
+					<script>
+						! function(d, s, id) {
+							var js, fjs = d.getElementsByTagName(s)[0],
+								p = /^http:/.test(d.location) ? 'http' : 'https';
+							if (!d.getElementById(id)) {
+								js = d.createElement(s);
+								js.id = id;
+								js.src = p + '://platform.twitter.com/widgets.js';
+								fjs.parentNode.insertBefore(js, fjs);
+							}
+						}(document, 'script', 'twitter-wjs');
+					</script>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<div id="scrollup"></div>
+
+	<script src="js/icheck.min.js"></script>
+	<script src="js/softspring.js"></script>
+	<script src="photos-slider/jquery.justifiedGallery.js"></script>
+
+	<script src="fancybox/source/jquery.fancybox.js"></script>
+	<script>
+		$(function() {
+			$(".fancybox").fancybox({
+				prevEffect: 'none',
+				nextEffect: 'none',
+				helpers: {
+					title: {
+						type: 'outside'
+					},
+					thumbs: {
+						width: 50,
+						height: 50
+					}
+				}
+			});
+			$("#mygallery").justifiedGallery({
+				rowHeight: 80
+			});
+		});
+	</script>
+
+
+
+	<!-- Yandex.Metrika informer -->
+	<center style="display:none">
+		<a href="https://metrika.yandex.ru/stat/?id=24151150&amp;from=informer" target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/24151150/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:24151150,lang:'ru'});return false}catch(e){}"
+			/></a>
+	</center>
+	<!-- /Yandex.Metrika informer -->
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function(d, w, c) {
+			(w[c] = w[c] || []).push(function() {
+				try {
+					w.yaCounter24151150 = new Ya.Metrika({
+						id: 24151150,
+						webvisor: true,
+						clickmap: true,
+						trackLinks: true,
+						accurateTrackBounce: true
+					});
+				} catch (e) {}
+			});
+
+			var n = d.getElementsByTagName("script")[0],
+				s = d.createElement("script"),
+				f = function() {
+					n.parentNode.insertBefore(s, n);
+				};
+			s.type = "text/javascript";
+			s.async = true;
+			s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+			if (w.opera == "[object Opera]") {
+				d.addEventListener("DOMContentLoaded", f, false);
+			} else {
+				f();
+			}
+		})(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript>
+		<div><img src="//mc.yandex.ru/watch/24151150" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
+
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-48530684-1', 'vesnasoft.org');
+		ga('send', 'pageview');
+	</script>
+</body>
+
+</html>

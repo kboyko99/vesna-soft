@@ -1,0 +1,147 @@
+@media screen and (max-width: 799px) {
+	body {
+		background-size: 45%;
+	}
+	*[data-ui='popover-panel']{
+		top:30px !important;
+	}
+	#scrollup{
+		right: 20px;
+		bottom: 20px;
+	}
+	.popover{
+		font-size:18px !important;
+	}
+	.header-container, .limited {
+		width:90%;
+	}
+	#site-logo{
+		font-size: 56px;
+		margin-top: 21px;
+		margin-bottom: 0px;
+	}
+	#site-description{
+		font-size: 16px;
+		margin-top: 9px;
+		margin-left: 3px;
+	}
+	nav{
+		margin-left: 5px;
+		margin-top:30px;
+		font-size: 13px;
+		margin-bottom:20px;
+	}
+	nav span img{
+		margin-right: 3px;
+		margin-left: 3px;
+		margin-bottom: 0px;
+		width: 7px;
+	}
+	hgroup{
+		width: 550px;
+	}
+
+								/*  header  */
+	.tree{
+		/*display: none;*/
+		width: 222px;
+		height: 180px;
+		top: 0px;
+		right: 0px;
+		background-size: 222px;
+	}
+	#join {
+		max-width: 23%;
+   		width: 23%;
+		right: 40px;
+		top: 0;
+	}
+	#about .regbutton {
+		font-size: 25px;
+	}
+
+
+								/*  about vesnasoft  */
+	#about p {
+		font-size: 14px
+	}
+
+
+								/*  agenda  */
+	#agenda{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.sectionHead {
+		font-size: 22px;
+		margin-bottom: 5px;
+	}
+	.agenda-item {
+		font-size: 8px; 
+	}
+	.agenda-item img {
+		width: 32px;
+	}
+	.agendaDate {
+		font-size: 115%;
+	}
+	img[alt=green-divider]{
+		margin-bottom: 12px;
+		width: 60px;
+	}
+	.data p, .agenda-item p {
+		font-size: 12px;
+		margin-left: 0px;
+	}
+	.data-p{
+		margin-right: 84px;
+
+	}
+	.stars{
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+
+	
+									/*  contacts  */
+	.contacts-info .contact-row {
+		width: 260px;
+		display: block;
+		margin: 0 auto;
+		clear: both;
+		float: none;
+	}
+								/*  partners  */
+	.main p, .info p{
+		font-size: 28px;
+	}
+	.importantPic{
+		width: 180px;
+	}
+		
+
+
+								/*  anketa  */
+	/*#anketa{
+		padding-top: 20px;
+		padding-bottom: 50px;
+		width: 90%;
+	}
+	.anketa{
+		width:524px;
+		font-size: 16px;
+	}
+	.anketa span{
+		display: block;
+		text-align: left;
+		width: 100%;
+	}
+	.form-input{
+	    width: 100%;
+	}
+	input[type=submit]{
+	    width: 300px;
+		margin-left: 0px;
+	}*/
+}
+
